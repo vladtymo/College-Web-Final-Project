@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: lightgray
+        }
+
+        .main-container {
+            display: flex;
+        }
+
+        nav {
+            border-right: 2px solid gray;
+            padding: 20px;
+            height: 100vh;
+            box-sizing: border-box;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(46, 46, 46);
+            padding: 20px;
+
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: rgb(114, 54, 54);
+            color: white;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.441);
+        }
+
+        main {
+            padding-bottom: 20px;
+        }
+
+        .right-container {
+            flex-grow: 1;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 12px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        footer p {
+            margin-left: auto;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <nav>
+            <!-- Menu -->
+            Menu
+            <ul>
+                <li>
+                    <a href="index.php">
+                        <i class="bi bi-geo-alt-fill me-3"></i>Item 1
+                    </a>
+                </li>
+                <li>
+                    <a href="add.php">
+                        <i class="bi bi-geo-alt-fill me-3"></i>Item 3
+                    </a>
+                </li>
+                <li>
+                    <a href="view.php">
+                        <i class="bi bi-geo-alt-fill me-3"></i>Item 2
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="right-container">
+            <header>
+                <h2>Dashboard</h2>
+            </header>
+            <main>
+                <!-- main content -->
+                Content
+            </main>
+            <footer>
+                <div>
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                </div>
+                <p>2025 - made with love</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
