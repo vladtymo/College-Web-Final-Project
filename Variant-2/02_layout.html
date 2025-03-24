@@ -9,12 +9,12 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            font-family: Times, serif;
         }
 
         main {
             background-color: lightgray;
-            padding: 10px;
         }
 
         footer {
@@ -77,6 +77,37 @@
         .move-right {
             margin-left: auto;
         }
+
+        main .container {
+            display: flex;
+            border-bottom: 1px solid gray;
+        }
+
+        main .container .left-block {
+            padding: 60px;
+            flex-basis: 50%;
+            box-sizing: border-box;
+        }
+
+        main .container .right-block {
+            flex-basis: 50%;
+            /* background-color: red; */
+        }
+
+        main .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main .container .btn {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(182, 182, 182);
+            text-align: center;
+            padding: 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -104,6 +135,7 @@
                 </li>
             </ul>
         </nav>
+
         <nav class="move-right">
             <ul>
                 <li>
@@ -126,7 +158,25 @@
     </header>
     <main>
         <!-- main content -->
-        Content
+        <div class="container">
+            <div class="left-block">
+                <h2>Let's hit the road</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore velit libero harum necessitatibus,
+                    at
+                    hic dolorum assumenda eligendi dolor quibusdam reprehenderit tempora.</p>
+                <p>
+                    <small>Odio quis excepturi ducimus
+                        blanditiis dolores in!</small>
+                </p>
+                <div class="btn">
+                    START
+                </div>
+            </div>
+            <div class="right-block">
+                <img src="./images/Screenshot 2025-03-24 at 13.04.51.png" alt="">
+            </div>
+        </div>
+        <!-- next block -->
     </main>
     <footer>
         <div>
