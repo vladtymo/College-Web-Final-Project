@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Card</title>
+    <style>
+        body {
+            margin: 20px;
+            background-color: rgb(211, 211, 211);
+        }
+
+        .card-small {
+            background-color: white;
+            padding: 18px;
+            box-shadow: 3px 3px 2px rgb(92, 92, 92);
+
+            flex-basis: 50%;
+        }
+
+        .title-block {
+            background-color: green;
+            padding: 16px;
+            position: relative;
+
+            top: -30px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+        }
+
+        .card-sm-text {
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .card-footer img {
+            vertical-align: baseline;
+        }
+
+        .container-1 {
+            display: flex;
+            gap: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="card-small">
+            <div class="card-header">
+                <div class="title-block">
+                    <img src="./images/data_white.svg" alt="">
+                </div>
+                <div>
+                    <span>Used Space</span>
+                    <br />
+                    <strong class="card-sm-text">49/50 GB</strong>
+                </div>
+            </div>
+            <hr>
+            <div class="card-footer">
+                <img width="16" src="./images/alert.png" alt=""> Get more space...
+            </div>
+        </div>
+        <div class="card-small">
+            <div class="card-header">
+                <div class="title-block">
+                    <img src="./images/data_white.svg" alt="">
+                </div>
+                <div>
+                    <span>Used Space</span>
+                    <br />
+                    <strong class="card-sm-text">49/50 GB</strong>
+                </div>
+            </div>
+            <hr>
+            <div class="card-footer">
+                <img width="16" src="./images/alert.png" alt=""> Get more space...
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
