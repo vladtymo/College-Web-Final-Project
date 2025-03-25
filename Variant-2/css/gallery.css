@@ -1,0 +1,10 @@
+.gallery {
+    display: flex;
+    height: 220px;
+}
+
+.gallery img {
+    flex-grow: 1;
+    overflow: hidden;
+    object-fit: cover;
+}

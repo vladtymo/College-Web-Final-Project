@@ -1,0 +1,33 @@
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(186, 186, 186);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    padding: 10px;
+    margin: 0 10px;
+
+    display: block;
+}
+
+nav a:hover {
+    background-color: rgb(114, 54, 54);
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.441);
+}
+
+.move-right {
+    margin-left: auto;
+}
