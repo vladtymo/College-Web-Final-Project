@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Card</title>
+    <style>
+        body {
+            margin: 20px;
+            background-color: rgb(211, 211, 211);
+        }
+
+        .container-2 {
+            display: flex;
+            gap: 14px;
+        }
+
+        .card-mid {
+            background-color: white;
+            padding: 18px;
+            box-shadow: 3px 3px 2px rgb(92, 92, 92);
+
+            flex-grow: 1;
+        }
+
+        .card-mid .card-header {
+            background-color: green;
+            padding: 16px;
+            position: relative;
+            top: -30px;
+        }
+
+        .card-mid .card-title {
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .card-mid .card-body {
+            margin-top: -20px;
+        }
+
+        .card-mid .card-footer img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-2">
+        <div class="card-mid">
+            <div class="card-header">
+                <img src="./images/graphics.svg" alt="">
+            </div>
+            <div class="card-body">
+                <span class="card-title">Daily Sales</span>
+                <br />
+                <span>55% increase in today sales</span>
+            </div>
+            <hr>
+            <div class="card-footer">
+                <img width="16" src="./images/time.png" alt=""> updated 4 minutes ago
+            </div>
+        </div>
+        <div class="card-mid">
+            <div class="card-header">
+                <img src="./images/graphics.svg" alt="">
+            </div>
+            <div class="card-body">
+                <span class="card-title">Daily Sales</span>
+                <br />
+                <span>55% increase in today sales</span>
+            </div>
+            <hr>
+            <div class="card-footer">
+                <img width="16" src="./images/time.png" alt=""> updated 4 minutes ago
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
