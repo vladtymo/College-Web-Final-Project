@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        form .column-3 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        form .column-3>* {
+            flex-grow: 1;
+        }
+
+        form input {
+            width: 100%;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Write to us</h2>
+    <form>
+        <div class="column-3">
+            <label for="name">Name:
+                <input type="text" id="name" name="name">
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" name="email">
+            </label>
+            <label for="message">Message:
+                <input type="tel" id="tel" name="tel">
+            </label>
+        </div>
+    </form>
+</body>
+
+</html>
