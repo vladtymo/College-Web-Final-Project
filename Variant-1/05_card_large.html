@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Card</title>
+    <style>
+        body {
+            margin: 20px;
+            background-color: rgb(211, 211, 211);
+        }
+
+        .container-3 {
+            display: flex;
+            gap: 14px;
+        }
+
+        .card-large {
+            background-color: white;
+            padding: 18px;
+            box-shadow: 3px 3px 2px rgb(92, 92, 92);
+
+            flex-grow: 1;
+        }
+
+        .card-large .card-header {
+            background-color: chocolate;
+            color: white;
+            padding: 16px;
+            position: relative;
+            top: -30px;
+        }
+
+        .card-large .card-body {
+            margin-top: -30px;
+        }
+
+        .card-large ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card-large li {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card-large li .text {
+            flex-grow: 1;
+        }
+
+        .card-large li img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .card-large .card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-large .card-header nav a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 2px;
+        }
+
+        .card-large .card-header nav a img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .card-large .card-header nav a.active {
+            background-color: rgb(211, 146, 100);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-3">
+        <div class="card-large">
+            <div class="card-header">
+                <span>Tasks:</span>
+                <nav>
+                    <a class="active" href="/">
+                        <img src="./images/bug.svg" alt="Bug">
+                        Bugs
+                    </a>
+                    <a href="/">
+                        <img src="./images/bug.svg" alt="Bug">
+                        Bugs
+                    </a>
+                    <a href="/">
+                        <img src="./images/bug.svg" alt="Bug">
+                        Bugs
+                    </a>
+                </nav>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        <span class="text">Sign contract for "What are conference orhanizers afraid of?"</span>
+                        <img src="./images/edit.png" alt="">
+                        <img src="./images/remove.png" alt="">
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span class="text">Sign contract for "What are conference orhanizers afraid of?"</span>
+                        <img src="./images/edit.png" alt="">
+                        <img src="./images/remove.png" alt="">
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span class="text">Sign contract for "What are conference orhanizers afraid of?"</span>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span class="text">Sign contract for "What are conference orhanizers afraid of?"</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
