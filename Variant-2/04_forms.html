@@ -11,6 +11,12 @@
             font-weight: normal;
         }
 
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
         form .column-3 {
             display: flex;
             justify-content: space-between;
@@ -23,6 +29,12 @@
 
         form .column-3 input {
             width: 100%;
+            box-sizing: border-box;
+            margin: 5px 0;
+        }
+
+        form select {
+            width: 100%;
             margin: 5px 0;
         }
     </style>
@@ -32,19 +44,34 @@
     <h2>Write to us</h2>
     <form>
         <div class="column-3">
-            <label for="name">Name:
+            <label for="name">Name:<br>
                 <input type="text" id="name" name="name">
             </label>
-            <label for="email">Email:
+            <label for="email">Email:<br>
                 <input type="email" id="email" name="email">
             </label>
-            <label for="message">Message:
+            <label for="message">Message:<br>
                 <input type="tel" id="tel" name="tel">
             </label>
         </div>
         <div>
-            <input type="radio">
+            <label>Contact me via: </label>
+            <input type="radio" name="contact">
             <label for="">Email</label>
+            <input type="radio" name="contact">
+            <label for="">Phone</label>
+            <input type="radio" name="contact">
+            <label for="">Telegram</label>
+        </div>
+        <div>
+            <label>Topic:<br>
+                <select>
+                    <option value="1">Post my story</option>
+                    <option value="2">Suggest an idea</option>
+                    <option value="3">Say something</option>
+                </select>
+            </label>
+
         </div>
     </form>
 </body>
