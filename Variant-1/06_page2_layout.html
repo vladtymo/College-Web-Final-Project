@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray
+        }
+
+        .main-container {
+            display: flex;
+        }
+
+        nav {
+            border-right: 2px solid gray;
+            padding: 20px;
+            /* min-height: 100vh; */
+            box-sizing: border-box;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(46, 46, 46);
+            padding: 20px;
+
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: rgb(114, 54, 54);
+            color: white;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.441);
+        }
+
+        main {
+            display: flex;
+            padding-bottom: 20px;
+            gap: 14px;
+            margin-right: 20px;
+        }
+
+        main .left {
+            flex-basis: 60%;
+        }
+
+        main .right {
+            flex-basis: 40%;
+        }
+
+        .right-container {
+            flex-grow: 1;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 12px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        footer p {
+            margin-left: auto;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .card-large {
+            background-color: white;
+            padding: 18px;
+            box-shadow: 3px 3px 2px rgb(92, 92, 92);
+
+            flex-grow: 1;
+        }
+
+        .card-large .card-header {
+            background-color: chocolate;
+            color: white;
+            padding: 16px;
+            position: relative;
+            top: -30px;
+        }
+
+        .card-large .card-body {
+            margin-top: -30px;
+        }
+
+        .card-large ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card-large li {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card-large li .text {
+            flex-grow: 1;
+        }
+
+        .card-large li img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .card-large .card-header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-large .card-header nav a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 2px;
+        }
+
+        .card-large .card-header nav a img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .card-large .card-header nav a.active {
+            background-color: rgb(211, 146, 100);
+        }
+
+        .card-small {
+            background-color: white;
+            padding: 18px;
+            box-shadow: 3px 3px 2px rgb(92, 92, 92);
+
+            flex-basis: 50%;
+        }
+
+        .card-small .title-block {
+            background-color: green;
+            padding: 16px;
+            position: relative;
+
+            top: -30px;
+        }
+
+        .card-small .card-header {
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+        }
+
+        .card-small .card-sm-text {
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .card-small .card-footer img {
+            vertical-align: baseline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <nav>
+            <!-- Menu -->
+            Menu
+            <ul>
+                <li>
+                    <a href="index.php">
+                        <i class="bi bi-geo-alt-fill me-3"></i>Item 1
+                    </a>
+                </li>
+                <li>
+                    <a href="add.php">
+                        <i class="bi bi-geo-alt-fill me-3"></i>Item 3
+                    </a>
+                </li>
+                <li>
+                    <a href="view.php">
+                        <i class="bi bi-geo-alt-fill me-3"></i>Item 2
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="right-container">
+            <header>
+                <h2>User Profile</h2>
+            </header>
+            <main>
+                <div class="left">
+                    <div class="card-large">
+                        <div class="card-header">
+                            <span>User Profile</span>
+                            <br>
+                            <span>Complete your profile</span>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    <input type="checkbox">
+                                    <span class="text">Sign contract for "What are conference orhanizers afraid
+                                        of?"</span>
+                                    <img src="./images/edit.png" alt="">
+                                    <img src="./images/remove.png" alt="">
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span class="text">Sign contract for "What are conference orhanizers afraid
+                                        of?"</span>
+                                    <img src="./images/edit.png" alt="">
+                                    <img src="./images/remove.png" alt="">
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span class="text">Sign contract for "What are conference orhanizers afraid
+                                        of?"</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span class="text">Sign contract for "What are conference orhanizers afraid
+                                        of?"</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="card-small">
+                        <div class="card-header">
+                            <div class="title-block">
+                                <img src="./images/data_white.svg" alt="">
+                            </div>
+                            <div>
+                                <span>Used Space</span>
+                                <br />
+                                <strong class="card-sm-text">49/50 GB</strong>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card-footer">
+                            <img width="16" src="./images/alert.png" alt=""> Get more space...
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div>
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                </div>
+                <p>2025 - made with love</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
