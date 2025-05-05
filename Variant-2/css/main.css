@@ -5,12 +5,12 @@ main .container {
 
 main .container .left-block {
     padding: 60px;
-    flex-basis: 50%;
+    flex-basis: 70%;
     box-sizing: border-box;
 }
 
 main .container .right-block {
-    flex-basis: 50%;
+    flex-basis: 30%;
     /* background-color: red; */
 }
 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <style>
+        @media (max-width: 850px) {
+            .move-right {
+                display: none;
+            }
+
+            main .container .right-block,
+            main .container .left-block {
+                flex-basis: 50%;
+            }
+
+            .gallery img {
+                display: none;
+                flex-basis: 50%;
+            }
+
+            .gallery img:nth-child(1),
+            .gallery img:nth-child(2) {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Horyzontal Menu</h2>
+
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.php">
+                        Item 1
+                    </a>
+                </li>
+                <li>
+                    <a href="add.php">
+                        Item 3
+                    </a>
+                </li>
+                <li>
+                    <a href="view.php">
+                        Item 2
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="move-right">
+            <ul>
+                <li>
+                    <a href="index.php">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="add.php">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="view.php">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- main content -->
+        <section class="container">
+            <div class="left-block">
+                <h2>Let's hit the road</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore velit libero harum necessitatibus,
+                    at
+                    hic dolorum assumenda eligendi dolor quibusdam reprehenderit tempora.</p>
+                <p>
+                    <small>Odio quis excepturi ducimus
+                        blanditiis dolores in!</small>
+                </p>
+                <div class="btn">
+                    START
+                </div>
+            </div>
+            <div class="right-block">
+                <img src="./images/Screenshot 2025-03-24 at 13.04.51.png" alt="">
+            </div>
+        </section>
+
+        <h2>Gallery</h2>
+
+        <section class="gallery">
+            <img src="./images/image1.jpg" alt="">
+            <img src="./images/image2.jpeg" alt="">
+            <img src="./images/image3.jpeg" alt="">
+            <img src="./images/image4.jpg" alt="">
+        </section>
+
+        <!-- next block -->
+    </main>
+    <footer>
+        <div>
+            <a href="">
+                <img src="./images/facebook-128.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/instagram-2-128.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/twitter-128.png" alt="">
+            </a>
+        </div>
+        <p>@ Untiteled 2025</p>
+    </footer>
+</body>
+
+</html>
